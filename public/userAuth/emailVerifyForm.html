@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Email Verification</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body class="bg-gray-50 dark:bg-gray-950  text-gray-950 dark:text-white">
+
+    <div class="flex flex-col justify-center font-sans min-w-screen min-h-screen bg-grey-lighter py-8 px-4">
+
+        <div class="mail__wrNOTESPACEer max-w-lg mx-auto">
+            <a href="#"
+                class="flex items-center justify-center mb-6 text-2xl font-semibold text-gray-950 dark:text-white">
+                <img class="w-8 h-8 mr-2" src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/logo.svg"
+                    alt="logo">
+                NoteSpace
+            </a>
+            
+            <div class="mail__content p-4 rounded-xl shadow-md  bg-white dark:border dark:bg-gray-800 dark:border-gray-700">
+
+                <div class="content__header text-center tracking-wide border-b dark:border-gray-700">
+                    <h1 class="text-3xl pb-3 flex items-center justify-center">E-mail Confirmation</h1>
+                </div>
+
+                <div class="content__body py-3 border-b dark:border-gray-700">
+                    <p class="mb-2">
+                        Hey,
+                    </p>
+                    <p>
+                        Welcome to The NOTESPACE, you're officially in! Can you help us out with an email
+                        confirmation? Just tap the button below.
+                    </p>
+                    <form action="emailverify.php" method="post">
+                    <button value="emailverify" name="emailverify" class="text-white tracking-wide bg-blue-600 hover:bg-blue-700 rounded w-full my-5 p-3 duration-300 ">Receive Token Email</button>
+                         
+                </form>
+                <form action="emailVerify.html" method="post">
+                        <!-- token input field -->
+                        <input type="text" name="token" placeholder="Enter token here" class="block w-full px-5 py-3 mt-2 text-gray-700 placeholder-gray-400 bg-white border border-gray-200 rounded-lg dark:placeholder-gray-600 dark:bg-gray-900 dark:text-gray-300 dark:border-gray-700 focus:border-blue-400 dark:focus:border-blue-400 focus:ring-blue-400 focus:outline-none focus:ring focus:ring-opacity-40">
+
+                        <!-- verify button -->
+                        <button type="submit" name="verify" class="text-white tracking-wide bg-blue-600 hover:bg-blue-700 rounded w-full my-5 p-3 duration-300 ">VERIFY</button>
+                    </form>
+                    <p class="text-sm">
+                        Stay awesome,<br> Team NOTESPACE
+                    </p>
+                </div>
+
+                <div class="content__footer mt-5 text-center text-grey-darker">
+                    <h3 class="text-base sm:text-lg">Thanks for using The NOTESPACE!</h3>
+                    <p>www.notespace.com</p>
+                    <div class="meta__social text-2xl flex justify-center my-4 gap-4">
+                        <!-- facebook -->
+                        <a href="#" class="text-gray-700 dark:text-gray-300 hover:text-blue-600">
+                            <i class="fa-brands fa-square-facebook"></i>
+                        </a>
+                        <!-- instagram -->
+                        <a href="#" class="text-gray-700 dark:text-gray-300 hover:text-pink-600">
+                            <i class="fa-brands fa-square-instagram"></i>
+                        </a>
+                        <!-- twitter -->
+                        <a href="#" class="text-gray-700 dark:text-gray-300 hover:text-blue-400">
+                            <i class="fa-brands fa-square-twitter"></i>
+                        </a>
+                        <!-- linkedin -->
+                        <a href="#" class="text-gray-700 dark:text-gray-300 hover:text-blue-600">
+                            <i class="fa-brands fa-linkedin"></i>
+                        </a>
+                    </div>
+
+                    <p class="leading-loose">
+                        Questions or concerns? <a href="#">help@theNOTESPACE.io</a>
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+</body>
+
+</html>

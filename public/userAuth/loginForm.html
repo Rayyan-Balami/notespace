@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Log In</title>
+  <link rel="stylesheet" href="../styles.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body class="dark:bg-gray-950">
+  <section class="max-w-7xl mx-auto min-h-screen flex items-center justify-center">
+
+    <!-- random image -->
+    <div class="img hidden lg:block lg:w-2/5 h-full overflow-hidden">
+      <img src="https://source.unsplash.com/random" alt="" class="w-full h-full object-cover" />
+    </div>
+
+    <!-- form -->
+    <div class="form m-4 lg:mx-10 w-full lg:w-3/5 h-full grid place-content-center">
+      <h1 class="text-2xl font-semibold tracking-wider text-gray-800 capitalize dark:text-white">
+        Welcome Back. 😘
+      </h1>
+
+      <p class="mt-4 text-gray-500 dark:text-gray-400">
+        Log in to access your personalized dashboard. Join discussions, connect with fellow learners, and dive into the world of learning
+      </p>
+
+      <form action="login.php" method="post" class="grid grid-cols-1 gap-5 mt-8 lg:grid-cols-2">
+       
+        
+
+        <!-- email -->
+        <div>
+          <label class="block mb-2 text-sm text-gray-600 dark:text-gray-200">Email Address</label>
+          <input type="email" placeholder="notespace@gmail.com" required name="email"
+          class="block w-full px-5 py-3 mt-2 text-gray-700 placeholder-gray-400 bg-white border border-gray-200 rounded-lg dark:placeholder-gray-600 dark:bg-gray-900 dark:text-gray-300 dark:border-gray-700 focus:border-blue-400 dark:focus:border-blue-400 focus:ring-blue-400 focus:outline-none focus:ring focus:ring-opacity-40" />
+        </div>
+
+        <!-- password -->
+        <div>
+          <label class="block mb-2 text-sm text-gray-600 dark:text-gray-200">Password</label>
+          <input type="password" placeholder="Enter your password" required name="password"
+          class="block w-full px-5 py-3 mt-2 text-gray-700 placeholder-gray-400 bg-white border border-gray-200 rounded-lg dark:placeholder-gray-600 dark:bg-gray-900 dark:text-gray-300 dark:border-gray-700 focus:border-blue-400 dark:focus:border-blue-400 focus:ring-blue-400 focus:outline-none focus:ring focus:ring-opacity-40" />
+        </div>
+
+        <!-- terms and condition -->
+        <div class="flex items-center justify-between px-5 py-3 mt-4 divide-x divide-gray-200 dark:divide-gray-700 text-gray-700 placeholder-gray-400 bg-white border border-gray-200 rounded-lg dark:placeholder-gray-600 dark:bg-gray-900 dark:text-gray-300 dark:border-gray-700">
+          <label class="text-sm w-1/2">
+            <a href="#" class="text-blue-500">Privacy Policy</a>
+            &amp;
+            <a href="#" class="text-blue-500">Terms</a>
+        </label>
+        <label class="text-sm w-1/2 text-right">
+            <a href="forgotPassword.html" class="text-blue-500">Forgot Password</a>
+        </label>
+        </div>
+
+        
+
+        <!-- login button -->
+        <div>
+          <button type="submit" value="submit" name="submit"
+            class="w-full px-5 py-3 mt-4 flex items-center justify-between text-white bg-blue-600 rounded-lg hover:bg-blue-700 focus:outline-none focus:bg-blue-700">
+            Log In
+            <div>
+              <i class="fa-solid fa-user-graduate"></i>
+
+            </div>
+          </button>
+        </div>
+
+        <!-- signup link -->
+        <div class="lg:col-span-2">
+          <a href="signupForm.html"
+            class="px-5 py-3 mt-4 flex items-center justify-between  text-white dark:text-gray-300 bg-gray-900 border rounded-lg dark:border-gray-700">
+            <div>
+                Don't have an account ? 🤯 Sign Up &nbsp;
+            </div>
+            <div>
+              <i class="fa-solid fa-arrow-right-to-bracket"></i>
+            </div>
+          </a>
+        </div>
+        
+        <!-- share message -->
+        <div class="lg:col-span-2 px-5 py-3 mt-4  text-gray-700 placeholder-gray-400 bg-white border border-gray-200 rounded-lg dark:placeholder-gray-600 dark:bg-gray-900 dark:text-gray-300 dark:border-gray-700">
+            <p class="text-center">
+              Spread the awesomeness.
+            </p>
+            <p class="text-center">
+                Share your notes, score sweet rewards, and level up your NoteSpace journey.
+              </p>
+            <div class="socailsites pt-3 text-2xl flex items-center justify-center gap-10">
+              <!-- facebook -->
+              <a href="#" class="text-gray-700 dark:text-gray-300 hover:text-blue-600">
+                <i class="fa-brands fa-square-facebook"></i>
+              </a>
+              <!-- instagram -->
+              <a href="#" class="text-gray-700 dark:text-gray-300 hover:text-pink-600">
+                <i class="fa-brands fa-square-instagram"></i>
+              </a>
+              <!-- twitter -->
+              <a href="#" class="text-gray-700 dark:text-gray-300 hover:text-blue-400">
+                <i class="fa-brands fa-square-twitter"></i>
+              </a>
+              <!-- linkedin -->
+              <a href="#" class="text-gray-700 dark:text-gray-300 hover:text-blue-600">
+                <i class="fa-brands fa-linkedin"></i>
+              </a>
+  
+            </div>
+          </div>
+  
+      </form>
+    </div>
+  </section>
+</body>
+
+</html>
